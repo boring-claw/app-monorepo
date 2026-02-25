@@ -29,7 +29,7 @@ describe('bufferUtils', () => {
     it('should return Buffer as is', () => {
       const buff = Buffer.from('Hello');
       const result = bufferUtils.toBuffer(buff);
-      expect(result).toBe(buff);
+      expect(result).toStrictEqual(buff);
     });
 
     it('should convert Uint8Array to Buffer', () => {
